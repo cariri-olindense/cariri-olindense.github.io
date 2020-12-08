@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'phalanx', Fallback, sans-serif !important;
+}
+  
+@font-face {
+    font-family: 'phalanx';
+    src: url('assets/phalanx.otf') format('opentype');
+}
