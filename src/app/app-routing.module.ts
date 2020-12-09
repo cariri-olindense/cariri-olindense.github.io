@@ -6,11 +6,6 @@ import { StartComponent } from './pages/start/start.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'start',
-    pathMatch: 'full'
-  },
-  {
-    path: 'start',
     component: StartComponent
   }
 ];
