@@ -1,3 +1,4 @@
+// Desfile
 .parade {
     width: 100%;
     animation-name: parade;
@@ -11,23 +12,32 @@
     to {opacity: 1.0;}
 }
 
+// Intro
 .backgroundBlue {
     background-color: #04388B;
     color: #FDC400;
+    display: flex;
+    align-items: center;
 }
 
 .title {
     margin-top: 10%;
-    margin-bottom: 8%;
+    margin-bottom: 10%;
+}
+
+.image {
+    max-width: 100%;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
 }
 
 .estandarte {
-    max-width: 100%;
-    border-radius: 10px;
-    border-color: #FDC400;
-    border-width: 2px;
-    border-style: solid;
     margin-bottom: 10%;
+}
+
+.border-yellow {
+    border-color: #FDC400;
 }
 
 .logo {
@@ -49,6 +59,42 @@
     margin-top: 5%;
 }
 
+// Produtos
+#products {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.backgroundYellow {
+    background-color: #FDC400;
+    color: #04388B;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    margin-bottom: 5%;
+}
+
+.buy {
+    background-color: #04388B;
+    border-color: #04388B;
+}
+
+a {
+    color: #FDC400;
+}
+
+.border-blue {
+    border-color: #04388B;
+}
+
+// Contato
 #contact {
     margin-top: 5%;
     color: #04388B;
