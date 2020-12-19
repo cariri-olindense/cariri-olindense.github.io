@@ -15,4 +15,7 @@ export class DialogShirtComponent implements OnInit {
   ngOnInit() {
   }
 
+  site() {
+    this.dialogRef.close();
+  }
 }
