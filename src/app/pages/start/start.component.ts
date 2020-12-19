@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { DialogShirtComponent } from './components/dialog-shirt/dialog-shirt.component';
 
 @Component({
   selector: 'app-start',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public dialog: MatDialog
+  ) { }
 
   ngOnInit() {
+    const dialogRef = this.dialog.open(DialogShirtComponent, {
+      width: 'auto',
+      height: 'auto'
+    });
   }
 
 }
