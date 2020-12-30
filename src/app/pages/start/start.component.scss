@@ -81,9 +81,14 @@
 
 .documentary {
     max-width: 100%;
-    border: 2px solid #FDC400;
-    border-radius: 10px;
 }
+
+@media (min-width: 1025px) {
+    .documentary {
+        border: 2px solid #FDC400;
+        border-radius: 10px;
+    }
+  }
 
 .documentary-legend {
     color: #FDC400;
