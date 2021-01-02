@@ -130,6 +130,12 @@
     margin-bottom: 5%;
 }
 
+@media (max-width: 320px) {
+    .spotify {
+        padding-left: 0px;
+    }
+}
+
 // Produtos
 #products {
     padding-top: 5%;
