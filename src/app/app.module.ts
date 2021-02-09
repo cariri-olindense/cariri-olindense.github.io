@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { StartComponent } from './pages/start/start.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogShirtComponent } from './pages/start/components/dialog-shirt/dialog-shirt.component';
+import { MatTooltipModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DialogShirtComponent } from './pages/start/components/dialog-shirt/dial
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent],
