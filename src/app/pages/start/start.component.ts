@@ -14,10 +14,10 @@ export class StartComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // const dialogRef = this.dialog.open(DialogShirtComponent, {
-    //   width: 'auto',
-    //   height: 'auto'
-    // });
+    const dialogRef = this.dialog.open(DialogShirtComponent, {
+      width: 'auto',
+      height: 'auto'
+    });
   }
 
 }
