@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { StartComponent } from './pages/start/start.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogShirtComponent } from './pages/start/components/dialog-shirt/dialog-shirt.component';
-import { MatTooltipModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatToolbarModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,9 @@ import { MatTooltipModule } from '@angular/material';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTooltipModule
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -9,15 +9,25 @@ import { DialogShirtComponent } from './components/dialog-shirt/dialog-shirt.com
 })
 export class StartComponent implements OnInit {
 
+  // Screen
+  smallScreen: boolean;
+  menu: boolean;
+
   constructor(
     public dialog: MatDialog
   ) { }
 
   ngOnInit() {
+    this.smallScreen = window.innerWidth < 568;
+    this.menu = false;
     const dialogRef = this.dialog.open(DialogShirtComponent, {
       width: 'auto',
       height: 'auto'
     });
   }
 
+  scroll(id) {
+    let el = document.getElementById(id);
+    el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+  }
 }

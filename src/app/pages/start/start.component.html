@@ -1,3 +1,20 @@
+<!-- Toolbar -->
+<p id="toolbar">
+    <mat-toolbar>
+        <img class="logo" src="assets/logo.png" />
+        <span *ngIf="!smallScreen">TCM Cariri Olindense</span>
+        <span *ngIf="smallScreen">Cariri Olindense</span>
+        <span class="example-spacer"></span>
+        <p *ngIf="!smallScreen" class="section" (click)="scroll('frevo')">Frevo</p>
+        <a *ngIf="!smallScreen" class="section" href="https://caririolindense.wixsite.com/loja">Loja</a>
+        <p *ngIf="!smallScreen" class="section" (click)="scroll('contact')">Contato</p>
+        <button *ngIf="smallScreen" mat-icon-button class="example-icon" aria-label="Icon-button with menu icon"
+            (click)="menu=!menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </mat-toolbar>
+</p>
+
 <!-- Desfile -->
 <img class="parade" src="assets/parade.jpg" />
 <div class="container-fluid">
@@ -7,13 +24,10 @@
         <div class="col-xl-6 col-12" align=center>
             <div class="col-xl-8 title">
                 <img class="image estandarte border-yellow" src="assets/estandarte.jpg" />
-                <h1>TCM Cariri</h1>
-                <h2>Olindense</h2>
             </div>
         </div>
         <div class="col-xl-6 col-12" align=center>
             <div class="col-xl-8 col-8 title">
-                <img class="logo" src="assets/logo.png" />
                 <h3>Siga o Cariri</h3>
                 <div class="row">
                     <div class="col-xl-12 social-midia">

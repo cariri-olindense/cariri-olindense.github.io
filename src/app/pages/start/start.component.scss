@@ -1,3 +1,42 @@
+// Toolbar
+#toolbar {
+    margin-bottom: 0px;
+}
+
+mat-toolbar {
+    background-color: #04388B;
+}
+
+.logo {
+    max-width: 45px;
+    border-radius: 50px;
+    margin-right: 1%;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-toolbar button {
+    background-color: #04388B;
+    color: #FDC400;
+}
+
+mat-toolbar span, p, a {
+    font-family: 'phalanx', Arial, Helvetica, sans-serif !important;
+    color: #FDC400;
+    margin-bottom: 0px;
+}
+
+mat-toolbar .section {
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+mat-toolbar a:link {
+    text-decoration: none;
+}
+
 // Desfile
 .parade {
     width: 100%;
@@ -38,12 +77,6 @@
 
 .border-yellow {
     border-color: #FDC400;
-}
-
-.logo {
-    max-width: 100%;
-    margin-bottom: 10%;
-    border-radius: 200px;
 }
 
 .social-midia {
