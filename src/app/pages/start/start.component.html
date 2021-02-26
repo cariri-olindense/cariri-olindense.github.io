@@ -10,10 +10,19 @@
         <p *ngIf="!smallScreen" class="section" (click)="scroll('contact')">Contato</p>
         <button *ngIf="smallScreen" mat-icon-button class="example-icon" aria-label="Icon-button with menu icon"
             (click)="menu=!menu">
-            <mat-icon>menu</mat-icon>
+            <mat-icon *ngIf="!menu">menu</mat-icon>
+            <p *ngIf="menu">X</p>
         </button>
     </mat-toolbar>
 </p>
+
+<!-- Sidenav -->
+<mat-sidenav-container *ngIf="menu" id="sidenav-container">
+    <mat-sidenav>Start</mat-sidenav>
+    <mat-sidenav-content (click)="scroll('frevo')">Frevo</mat-sidenav-content>
+    <mat-sidenav-content (click)="ecommerce()">Loja</mat-sidenav-content>
+    <mat-sidenav-content (click)="scroll('contact')">Contato</mat-sidenav-content>
+</mat-sidenav-container>
 
 <!-- Desfile -->
 <img class="parade" src="assets/parade.jpg" />

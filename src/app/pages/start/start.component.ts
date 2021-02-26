@@ -30,4 +30,8 @@ export class StartComponent implements OnInit {
     let el = document.getElementById(id);
     el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
   }
+
+  ecommerce() {
+    window.location.href = 'https://caririolindense.wixsite.com/loja';
+  }
 }

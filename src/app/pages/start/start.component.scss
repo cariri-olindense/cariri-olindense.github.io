@@ -37,6 +37,19 @@ mat-toolbar a:link {
     text-decoration: none;
 }
 
+// Sidenav
+.sidenav-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+mat-sidenav-content {
+    background-color: #04388B;
+    color: #FDC400;
+    padding-left: 5%;
+}
+
 // Desfile
 .parade {
     width: 100%;
