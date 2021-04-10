@@ -1,259 +1,273 @@
 // Toolbar
 #toolbar {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 mat-toolbar {
-    background-color: #04388B;
+  background-color: #04388b;
 }
 
 .logo {
-    max-width: 45px;
-    border-radius: 50px;
-    margin-right: 15px;
+  max-width: 45px;
+  border-radius: 50px;
+  margin-right: 15px;
 }
 
 .example-spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 mat-toolbar button {
-    background-color: #04388B;
-    color: #FDC400;
+  background-color: #04388b;
+  color: #fdc400;
 }
 
-mat-toolbar span, mat-toolbar p, mat-toolbar a {
-    font-family: 'phalanx', Arial, Helvetica, sans-serif !important;
-    color: #FDC400;
-    margin-bottom: 0px;
+mat-toolbar span,
+mat-toolbar p,
+mat-toolbar a {
+  font-family: "phalanx", Arial, Helvetica, sans-serif !important;
+  color: #fdc400;
+  margin-bottom: 0px;
 }
 
 mat-toolbar .section {
-    margin-left: 2%;
-    cursor: pointer;
+  margin-left: 2%;
+  cursor: pointer;
 }
 
 mat-toolbar a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 // Sidenav
-.sidenav-container{
-    position: absolute;
-    top: 0;
-    left: 0;
+.sidenav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 mat-sidenav-content {
-    background-color: #04388B;
-    color: #FDC400;
-    padding-left: 5%;
+  background-color: #04388b;
+  color: #fdc400;
+  padding-left: 5%;
 }
 
 // Desfile
 .parade {
-    width: 100%;
-    animation-name: parade;
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
-    display: flex;
+  width: 100%;
+  animation-name: parade;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  display: flex;
 }
-  
+
 @keyframes parade {
-    from {opacity: 0.0;}
-    to {opacity: 1.0;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 // Intro
 .backgroundBlue {
-    background-color: #04388B;
-    color: #FDC400;
-    display: flex;
-    align-items: center;
+  background-color: #04388b;
+  color: #fdc400;
+  display: flex;
+  align-items: center;
 }
 
 .estandarte {
-    margin-top: 10%;
-    margin-bottom: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .image {
-    max-width: 100%;
-    border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
+  max-width: 100%;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .follow {
-    margin-bottom: 10%;
+  margin-bottom: 10%;
 }
 
 .border-yellow {
-    border-color: #FDC400;
+  border-color: #fdc400;
 }
 
 .social-midia {
-    text-align: center !important;
+  text-align: center !important;
 }
 
 .social {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    margin-top: 5%;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 5%;
 }
 
 // Resumo
 .old-cariri {
-    width: 100%;
+  width: 100%;
 }
 
 .resume {
-    background-color: #04388B;
-    text-align: justify;
-    color: #FDC400;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    border-radius: 10px;
-    margin-bottom: 10%;
+  background-color: #04388b;
+  text-align: justify;
+  color: #fdc400;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin-bottom: 10%;
 }
 
 .section {
-    padding-top: 5%;
-    padding-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .frame {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 @media (min-width: 1025px) {
-    .yellow-border {
-        border: 2px solid #FDC400;
-        border-radius: 10px;
-    }
+  .yellow-border {
+    border: 2px solid #fdc400;
+    border-radius: 10px;
+  }
 }
 
 .yellow-legend {
-    color: #FDC400;
+  color: #fdc400;
 }
 
 // Prêmios
 .patrimonioVivo {
-    max-width: 100%;
-    padding-top: 5%;
+  max-width: 100%;
+  padding-top: 5%;
 }
 
 // Frevo
 .frevo-title {
-    color: #04388B;
-    display: flex;
-    align-items: center;
+  color: #04388b;
+  display: flex;
+  align-items: center;
 }
 
 .backgroundYellow {
-    background-color: #FDC400;
-    color: #04388B;
-    display: flex;
-    align-items: center;
+  background-color: #fdc400;
+  color: #04388b;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 1025px) {
-    .blue-border {
-        border: 2px solid #04388B;
-        border-radius: 10px;
-    }
+  .blue-border {
+    border: 2px solid #04388b;
+    border-radius: 10px;
+  }
 }
 
 .blue-legend {
-    color: #04388B;
+  color: #04388b;
 }
 
 .score {
-    width: 30px;
+  width: 30px;
 }
 
 .blue-legend a {
-    color: #04388B;
+  color: #04388b;
 }
 
 .passo {
-    margin-top: 5%;
-    margin-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 @media (max-width: 320px) {
-    .spotify {
-        padding-left: 0px;
-    }
+  .spotify {
+    padding-left: 0px;
+  }
 }
 
 // Produtos
 #products {
-    padding-top: 5%;
-    padding-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .button {
-    padding-left: 1%;
-    padding-right: 1%;
-    border-radius: 5px;
-    border-width: 2px;
-    border-style: solid;
-    margin-bottom: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  margin-bottom: 5%;
 }
 
 .buy-blue {
-    background-color: #04388B;
-    border-color: #04388B;
+  background-color: #04388b;
+  border-color: #04388b;
 }
 
 a {
-    color: #FDC400;
+  color: #fdc400;
 }
 
 .border-blue {
-    border-color: #04388B;
+  border-color: #04388b;
 }
 
 .buy-yellow {
-    background-color: #FDC400;
-    border-color: #FDC400;
+  background-color: #fdc400;
+  border-color: #fdc400;
 }
 
 .buy-yellow a {
-    color: #04388B;
+  color: #04388b;
 }
 
 // Contato
 #contact {
-    margin-top: 5%;
-    color: #04388B;
+  margin-top: 5%;
+  color: #04388b;
 }
 
 .second-font {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #contact a {
-    color:#04388B;
+  color: #04388b;
 }
 
 .contact-img img {
-    width: 15px;
+  width: 15px;
 }
 
 .contact-column {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .head {
-    max-width: 100%;
-    border-radius: 10px;
-    border-color:#04388B;
-    border-width: 2px;
-    border-style: solid;
-    margin-bottom: 5%;
+  max-width: 100%;
+  border-radius: 10px;
+  border-color: #04388b;
+  border-width: 2px;
+  border-style: solid;
+  margin-bottom: 5%;
+}
+
+#signature {
+  padding-top: 15px;
+}
+
+#signature img {
+  width: 20px;
 }
