@@ -1,0 +1,21 @@
+<!-- Toolbar -->
+<p id="toolbar">
+    <mat-toolbar>
+        <img class="logo" src="assets/logo.png" />
+        <span class="first-font" *ngIf="!smallScreen">TCM Cariri Olindense</span>
+        <span class="first-font" *ngIf="smallScreen">Cariri Olindense</span>
+        <span class="example-spacer"></span>
+        <p *ngIf="!smallScreen" class="section" routerLink="/">Página Inicial</p>
+        <button *ngIf="smallScreen" mat-icon-button class="example-icon" aria-label="Icon-button with menu icon"
+            (click)="menu=!menu">
+            <mat-icon *ngIf="!menu">menu</mat-icon>
+            <p *ngIf="menu">X</p>
+        </button>
+    </mat-toolbar>
+</p>
+
+<!-- Sidenav -->
+<mat-sidenav-container *ngIf="menu" id="sidenav-container">
+    <mat-sidenav>Start</mat-sidenav>
+    <mat-sidenav-content class="second-font" routerLink="/">Página Inicial</mat-sidenav-content>
+</mat-sidenav-container>

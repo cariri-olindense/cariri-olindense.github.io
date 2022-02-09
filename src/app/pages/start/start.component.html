@@ -2,10 +2,11 @@
 <p id="toolbar">
     <mat-toolbar>
         <img class="logo" src="assets/logo.png" />
-        <span *ngIf="!smallScreen">TCM Cariri Olindense</span>
-        <span *ngIf="smallScreen">Cariri Olindense</span>
+        <span class="first-font" *ngIf="!smallScreen">TCM Cariri Olindense</span>
+        <span class="first-font" *ngIf="smallScreen">Cariri Olindense</span>
         <span class="example-spacer"></span>
         <p *ngIf="!smallScreen" class="section" (click)="scroll('frevo')">Frevo</p>
+        <p *ngIf="!smallScreen" class="section" routerLink="/exposicao">Exposição</p>
         <a *ngIf="!smallScreen" class="section" href="https://caririolindense.wixsite.com/loja">Loja</a>
         <p *ngIf="!smallScreen" class="section" (click)="scroll('contact')">Contato</p>
         <button *ngIf="smallScreen" mat-icon-button class="example-icon" aria-label="Icon-button with menu icon"
@@ -19,9 +20,10 @@
 <!-- Sidenav -->
 <mat-sidenav-container *ngIf="menu" id="sidenav-container">
     <mat-sidenav>Start</mat-sidenav>
-    <mat-sidenav-content (click)="scroll('frevo')">Frevo</mat-sidenav-content>
-    <mat-sidenav-content (click)="ecommerce()">Loja</mat-sidenav-content>
-    <mat-sidenav-content (click)="scroll('contact')">Contato</mat-sidenav-content>
+    <mat-sidenav-content class="second-font" (click)="scroll('frevo')">Frevo</mat-sidenav-content>
+    <mat-sidenav-content class="second-font" routerLink="/exposicao">Exposição</mat-sidenav-content>
+    <mat-sidenav-content class="second-font" (click)="ecommerce()">Loja</mat-sidenav-content>
+    <mat-sidenav-content class="second-font" (click)="scroll('contact')">Contato</mat-sidenav-content>
 </mat-sidenav-container>
 
 <!-- Desfile -->

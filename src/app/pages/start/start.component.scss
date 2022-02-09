@@ -1,55 +1,6 @@
 // Toolbar
-#toolbar {
-  margin-bottom: 0px;
-}
-
 mat-toolbar {
   background-color: #04388b;
-}
-
-.logo {
-  max-width: 45px;
-  border-radius: 50px;
-  margin-right: 15px;
-}
-
-.example-spacer {
-  flex: 1 1 auto;
-}
-
-mat-toolbar button {
-  background-color: #04388b;
-  color: #fdc400;
-}
-
-mat-toolbar span,
-mat-toolbar p,
-mat-toolbar a {
-  font-family: "phalanx", Arial, Helvetica, sans-serif !important;
-  color: #fdc400;
-  margin-bottom: 0px;
-}
-
-mat-toolbar .section {
-  margin-left: 2%;
-  cursor: pointer;
-}
-
-mat-toolbar a:link {
-  text-decoration: none;
-}
-
-// Sidenav
-.sidenav-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-mat-sidenav-content {
-  background-color: #04388b;
-  color: #fdc400;
-  padding-left: 5%;
 }
 
 // Desfile
@@ -239,10 +190,6 @@ a {
 #contact {
   margin-top: 5%;
   color: #04388b;
-}
-
-.second-font {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #contact a {
