@@ -13,17 +13,17 @@ export class StartComponent implements OnInit {
   smallScreen: boolean;
   menu: boolean;
 
-  constructor(
-    public dialog: MatDialog
-  ) { }
+  // constructor(
+  //   public dialog: MatDialog
+  // ) { }
 
   ngOnInit() {
     this.smallScreen = window.innerWidth < 568;
     this.menu = false;
-    const dialogRef = this.dialog.open(DialogShirtComponent, {
-      width: 'auto',
-      height: 'auto'
-    });
+    // const dialogRef = this.dialog.open(DialogShirtComponent, {
+    //   width: 'auto',
+    //   height: 'auto'
+    // });
   }
 
   scroll(id) {
