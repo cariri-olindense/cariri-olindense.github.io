@@ -24,7 +24,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Updating production code
 
-In branch dev, run `ng build --prod --base-href https://caririolindense.org.br/` . After, run `ngh --branch=gh-pages --cname=caririolindense.org.br`.
+On dev branch, run `ng build --prod --base-href https://caririolindense.org.br/` . After, run `ngh --branch=gh-pages --cname=caririolindense.org.br`.
 
 ## Further help
 
