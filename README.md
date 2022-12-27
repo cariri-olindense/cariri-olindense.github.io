@@ -22,7 +22,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Update production code
+## Updating production code
 
 In branch dev, run `ng build --prod --base-href https://caririolindense.org.br/` . After, run `ngh --branch=gh-pages --cname=caririolindense.org.br`.
 
