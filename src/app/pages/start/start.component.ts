@@ -32,6 +32,6 @@ export class StartComponent implements OnInit {
   }
 
   ecommerce() {
-    window.location.href = 'https://caririolindense.wixsite.com/loja';
+    window.location.href = 'https://www.espacodeculturapopular.com.br';
   }
 }
