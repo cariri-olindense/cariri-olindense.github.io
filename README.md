@@ -12,7 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run build` to build the project, including the `/conduta/` entry point for direct access on GitHub Pages. The build artifacts will be stored in the `dist/` directory. Use `npm run build -- --prod` for a production build.
 
 ## Running unit tests
 
@@ -24,7 +24,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Updating production code
 
-On dev branch, run `ng build --prod --base-href https://caririolindense.org.br/` . After, run `ngh --branch=gh-pages --cname=caririolindense.org.br`.
+On dev branch, run `npm run build -- --prod --base-href https://caririolindense.org.br/` . After, run `ngh --branch=gh-pages --cname=caririolindense.org.br`.
 
 ## Further help
 

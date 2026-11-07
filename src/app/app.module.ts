@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartComponent } from './pages/start/start.component';
+import { CondutaComponent } from './pages/conduta/conduta.component';
+import { SiteHeaderComponent } from './components/site-header/site-header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogShirtComponent } from './pages/start/components/dialog-shirt/dialog-shirt.component';
 import { MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
@@ -12,6 +14,8 @@ import { MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatToo
   declarations: [
     AppComponent,
     StartComponent,
+    CondutaComponent,
+    SiteHeaderComponent,
     DialogShirtComponent
   ],
   imports: [

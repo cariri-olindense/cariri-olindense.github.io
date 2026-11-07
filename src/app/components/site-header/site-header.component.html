@@ -1,0 +1,25 @@
+<header>
+  <mat-toolbar>
+    <a class="brand" routerLink="/" (click)="menu = false" aria-label="Cariri Olindense — início">
+      <img class="logo" src="assets/logo.png" alt="" />
+      <span class="desktop-name">TCM Cariri Olindense</span>
+      <span class="mobile-name">Cariri Olindense</span>
+    </a>
+    <nav class="desktop-menu" aria-label="Menu principal">
+      <a routerLink="/" fragment="frevo">Frevo</a>
+      <a href="https://www.espacodeculturapopular.com.br">Loja</a>
+      <a routerLink="/" fragment="contact">Contato</a>
+      <a routerLink="/conduta" routerLinkActive="active">Conduta</a>
+    </nav>
+    <button class="menu-toggle" mat-icon-button type="button" (click)="menu = !menu"
+      [attr.aria-expanded]="menu" aria-controls="mobile-menu" [attr.aria-label]="menu ? 'Fechar menu' : 'Abrir menu'">
+      <mat-icon>{{ menu ? 'close' : 'menu' }}</mat-icon>
+    </button>
+  </mat-toolbar>
+  <nav *ngIf="menu" id="mobile-menu" class="mobile-menu" aria-label="Menu principal no celular">
+    <a routerLink="/" fragment="frevo" (click)="menu = false">Frevo</a>
+    <a href="https://www.espacodeculturapopular.com.br">Loja</a>
+    <a routerLink="/" fragment="contact" (click)="menu = false">Contato</a>
+    <a routerLink="/conduta" routerLinkActive="active" (click)="menu = false">Conduta</a>
+  </nav>
+</header>

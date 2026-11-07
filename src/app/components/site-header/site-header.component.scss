@@ -1,0 +1,67 @@
+header,
+mat-toolbar {
+  background-color: #04388b;
+  color: #fdc400;
+}
+
+a {
+  font-family: "phalanx", Arial, Helvetica, sans-serif;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 45px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.desktop-menu {
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+}
+
+.active,
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.menu-toggle,
+.mobile-name,
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .desktop-name,
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-name,
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle {
+    margin-left: auto;
+    color: inherit;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 12px;
+  }
+
+  .mobile-menu a {
+    padding: 12px 0;
+  }
+}
